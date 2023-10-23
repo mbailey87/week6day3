@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comments Section</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="fixed-top original-post">
+        <p>Trying to decide a career path? Programming is the move. Change my mind.</p>
+    </div>
+    <div class="comments-section">
+        <ul class="comments-list">
+        </ul>
+    </div>
+
+    <div class="fixed-bottom create-comment">
+        <div class="display-name-container">
+            <img src="images/default-image-pic.PNG" alt="Profile Picture" class="profilePic">
+            <input type="text" id="displayName" placeholder="Enter your display name">
+        </div>
+        <textarea rows="3" id="commentText" placeholder="Enter your comment"></textarea>        
+        <button id="createComment">Create Comment</button>
+    </div>
+<div class="edit-comment-modal">
+    <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <h2>Edit Comment</h2>
+        <textarea id="editCommentText"></textarea>
+        <button id="submitEdit">Submit</button>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
